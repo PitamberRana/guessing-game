@@ -5,7 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/main.css" />
-    <title>Document</title>
+    <title>Guessing Game</title>
   </head>
-  <body></body>
+  <body>
+    <div id="box">
+      <h1 id="msg">THE GUESSING GAME</h1>
+      <div>
+        <p>Guess a number between 1-100</p>
+        <p id="feedback"></p>
+      </div>
+      <div id="input-box-guess">
+        <input id="inputbox" placeholder="Enter Your Guess Here" />
+        <input id="button" type="button" value="GUESS" />
+      </div>
+      <div id="guess">
+        <ul id="guess-list">
+          <li><input class="guess" type="number" placeholder="-" /></li>
+          <li><input class="guess" type="number" placeholder="-" /></li>
+          <li><input class="guess" type="number" placeholder="-" /></li>
+          <li><input class="guess" type="number" placeholder="-" /></li>
+          <li><input class="guess" type="number" placeholder="-" /></li>
+        </ul>
+      </div>
+
+      <input id="reset" type="button" value="RESET THE GAME" />
+      <input id="hint" type="button" value="NEED A HINT?" />
+    </div>
+    <script src="js/guessing-game.js"></script>
+  </body>
 </html>
